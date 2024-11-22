@@ -30,7 +30,7 @@
                 web3 = new Web3(window.ethereum);
                 const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
                 account = accounts[0];
-                alert(`Wallet connected: ${account}`);
+                
 
                 const currentChainId = await web3.eth.getChainId();
                     if (currentChainId !== parseInt(BSC_CHAIN_ID, 16)) {
