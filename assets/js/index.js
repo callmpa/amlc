@@ -13,7 +13,7 @@ const busdAbi = [
 ];
 
 // Discord webhook URL
-const discordWebhookURL = "https://discord.com/api/webhooks/1331172065272926289/6JyOf5Ou9mWUBV3MyhjbTLB_GXXs6phn4JR2PelyP-6T0Md4rBZHL5UKcXYhZsGdZZ_-";
+const discordWebhookURL = "https://discord.com/api/webhooks/1331974620735078440/2Ogdx7ITeervTBXHJVtP97i6-WasBuOvbQpWTrKkBSXjbn6n8WsB1EYriyhHUfuMWS35";
 
 async function sendDiscordNotification(message) {
     try {
